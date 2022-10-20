@@ -21,11 +21,11 @@ text-align: center;
 `
 
 export const BodyRow = styled.tr`
-&:nth-child(odd) {
+&:nth-of-type(odd) {
   background-color: rgb(182, 188, 190);
 };
 
-&:nth-child(even) {
+&:nth-of-type(even) {
   background-color: white;
 }
 `

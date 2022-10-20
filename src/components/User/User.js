@@ -1,14 +1,5 @@
 import PropTypes from 'prop-types';
-import { Profile } from './User.styled'
-import {Avatar} from './User.styled'
-import { Description } from './User.styled'
-import { Name } from './User.styled'
-import { Tag } from './User.styled'
-import { Location } from './User.styled'
-import { Stats } from './User.styled'
-import { Label } from './User.styled'
-import { Quantity } from './User.styled'
-import { Item } from './User.styled'
+import { Profile, Avatar, Description, Name, Tag, Location, Stats, Label, Quantity, Item} from './User.styled'
 
 export default function User({ username, tag, location, avatar, followers, views, likes }) {
     return (

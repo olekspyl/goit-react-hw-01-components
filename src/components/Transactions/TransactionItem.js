@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { TableData, BodyRow } from './Transactions.styled';
+import { TableData, BodyRow} from './Transactions.styled';
 
 export default function Transaction({  type, amount, currency }) { 
     return(<BodyRow>
@@ -11,6 +11,7 @@ export default function Transaction({  type, amount, currency }) {
 }
 
 Transaction.propTypes = {
+  id: PropTypes.string,
   type: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,

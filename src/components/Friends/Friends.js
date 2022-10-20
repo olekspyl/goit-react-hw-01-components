@@ -6,8 +6,8 @@ import { Name } from './Friends.styled';
 import {BsFillCircleFill} from 'react-icons/bs';
 
 
-export default function Friends({id, avatar, name, isOnline}) {
-    return (<Item id={id}>
+export default function Friends({avatar, name, isOnline}) {
+    return (<Item>
         <Status isOnline={isOnline}><BsFillCircleFill /> {isOnline }</Status>
   <Avatar src={avatar} alt="User avatar"/>
         <Name>{name}</Name>
@@ -15,6 +15,7 @@ export default function Friends({id, avatar, name, isOnline}) {
 }
 
 Friends.propTypes = {
+    id: PropTypes.number,
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired,

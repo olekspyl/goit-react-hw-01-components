@@ -10,17 +10,16 @@ export default function TransactionHistory({transactions}) {
       <TableHeader>Currency</TableHeader>
     </TableRow>
   </thead>
-      
+      <tbody>
       {transactions.map(transaction => (
-          <tbody key={transaction.id}>
-          <Transaction
+            <Transaction key={transaction.id}
                         type={transaction.type}
                         amount={transaction.amount}
                         currency={transaction.currency}
                     />
-          </tbody>
+          
             ))}
-  
+  </tbody>
 </TransactionTable>)
 }
 
